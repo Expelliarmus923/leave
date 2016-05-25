@@ -10,12 +10,10 @@
         margin: 0;
         padding: 0;
     }
-    
-    #output {
-        text-align: center;
-        color: red;
+    #output{
+        text-align:center;
+        color:red;
     }
-    
     #touch {
         width: 200px;
         height: 200px;
@@ -31,23 +29,39 @@
     
     .leave-slider ul {
         list-style: none;
+        width: 400%;
         height: 100%;
-        transition: all 0.5s ease-out;
     }
     
     .leave-slider ul li {
+        width: 25%;
         height: 100%;
         float: left;
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
     }
     
     .leave-slider ul li a {
         display: block;
         width: 100%;
         height: 100%;
+        background: url('./static/images/1.jpg') no-repeat;
+        background-size: 100% 100%;
     }
-     .leave-status{
+    
+    .leave-slider ul li:nth-child(2) a {
+        background: url('./static/images/2.jpg') no-repeat;
+        background-size: 100% 100%;
+    }
+    
+    .leave-slider ul li:nth-child(3) a {
+        background: url('./static/images/3.jpg') no-repeat;
+        background-size: 100% 100%;
+    }
+    
+    .leave-slider ul li:nth-child(4) a {
+        background: url('./static/images/4.jpg') no-repeat;
+        background-size: 100% 100%;
+    }
+    .leave-status{
         position:absolute;
         left:0;
         bottom:5px;
@@ -60,7 +74,6 @@
         height:10px;
         border-radius:50%;
         border:1px solid #fff;
-        margin:0 1px;
     }
     .leave-status span.active{
         border:1px solid #fff;
@@ -71,10 +84,31 @@
 </head>
 
 <body>
-    <div id="scroll"></div>
+     <div class="leave-slider">
+        <ul class="leave-images">
+            <li>
+                <a href="javascript:;"></a>
+            </li>
+            <li>
+                <a href="javascript:;"></a>
+            </li>
+            <li>
+                <a href="javascript:;"></a>
+            </li>
+            <li>
+                <a href="javascript:;"></a>
+            </li>
+        </ul>
+        <div class="leave-status">
+            <span class="active"></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
     <!-- <div id="touch"></div> -->
     <div id="output"></div>
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
     var config ={
         id: "scroll",
         images: ['./static/images/1.jpg', './static/images/2.jpg', './static/images/3.jpg', './static/images/4.jpg','./static/images/1.jpg'],
@@ -82,7 +116,7 @@
     };
     var app = new Leave(config);
     app.start();
-    </script>
+    </script> -->
 </body>
 
 </html>
