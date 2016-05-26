@@ -2,9 +2,9 @@
 ## 简介
 Leave.js是一款轻量级的移动端的轮播图插件，因为用到了很多ES5和CSS3的语法，所以只运行在现代浏览器上。
 ## 使用方法
-1.引入leave.css,和Leave.js
+1.引入dist下的leave.css,和leave.js
 
-2.
+2.写入如下代码
 ```
   var config = {
     id://需要元素的id
