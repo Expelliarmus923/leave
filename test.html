@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0,user-scalable=no">
     <title>leave test</title>
     <link rel="stylesheet" href="lib/css/leave.css">
-    <script src="lib/js/leave.js"></script>
+    <script src="dist/Leave-es6.min.js"></script>
 </head>
 
 <body>
@@ -15,11 +15,10 @@
     <div id="output"></div>
     <script type="text/javascript">
     var config ={
-        id: "scroll",
+        id: "#scroll",
         images: ['./static/images/1.jpg', './static/images/2.jpg', './static/images/3.jpg', './static/images/4.jpg','./static/images/1.jpg'],
-        links: ['http://www.bing.com', 'http://www.bing.com', 'http://www.bing.com'],
+        links: [],
         height:"200px",
-        autoplay:false,
     };
     var app = new Leave(config);
     app.start();
